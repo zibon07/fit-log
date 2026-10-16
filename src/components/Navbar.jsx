@@ -16,7 +16,7 @@ const Navbar = () => {
 
     return (
         <nav className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#0c0d0f]/80 text-white backdrop-blur-md">
-            <div className="relative mx-auto flex h-16 max-w-[1200px] items-center justify-between px-5">
+            <div className="relative mx-auto flex h-16 max-w-300 items-center justify-between px-5">
 
                 {/* Left: Logo */}
                 <Link href="/" className="flex items-center gap-2">

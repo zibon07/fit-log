@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const Hero = () => {
     return (
-        <section className="mx-auto w-full max-w-[1200px] px-3 py-4 sm:px-5">
-            <div className="relative flex  min-h-[220px] items-center overflow-hidden rounded-lg border border-white/5 bg-[#15161b] px-6 py-12 sm:px-7 md:min-h-[220px]">
+        <section className="mx-auto w-full max-w-300 px-3 py-4 sm:px-5">
+            <div className="relative flex  min-h-55 items-center overflow-hidden rounded-lg border border-white/5 bg-[#15161b] px-6 py-12 sm:px-7 md:min-h-55">
 
                 {/* Left: Hero content */}
-                <div className="relative z-10 max-w-[420px]">
+                <div className="relative z-10 max-w-105">
                     <p className="mb-3 text-[7px] font-bold uppercase tracking-[0.15em] text-[#ccff00]">
                         Workout Library
                     </p>
@@ -18,7 +18,7 @@ const Hero = () => {
                         every set.
                     </h1>
 
-                    <p className="mt-3 max-w-[350px] text-[9px] leading-relaxed text-gray-400">
+                    <p className="mt-3 max-w-87.5 text-[9px] leading-relaxed text-gray-400">
                         FitLog is a dark, no-nonsense gym companion: pick a lift, lock it
                         into today&apos;s plan, and watch the week&apos;s work add up.
                     </p>

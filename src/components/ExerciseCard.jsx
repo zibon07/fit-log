@@ -1,4 +1,5 @@
 import { Clock, Flame, Star } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function ExerciseCard({ item }) {
@@ -6,7 +7,7 @@ export default function ExerciseCard({ item }) {
     <Link href={`/exercise-details/${item.id}`} className="block">
       
     <div className="bg-[#14161b] rounded-xl overflow-hidden">
-      <img src={item.image} alt={item.name} className="w-full h-36 object-cover" />
+      <Image src={item.image} alt={item.name} width={400} height={144} className="w-full h-36 object-cover" />
 
       <div className="p-3">
         <div className="flex flex-wrap gap-1 mb-2">

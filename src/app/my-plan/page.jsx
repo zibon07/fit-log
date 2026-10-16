@@ -28,7 +28,6 @@ export default function MyPlanPage() {
 
   return (
     <section className="w-full max-w-6xl mx-auto px-6 py-12 text-white">
-      {/* Header */}
       <div className="mb-10">
         <h1 className="text-5xl md:text-6xl font-extrabold uppercase tracking-tight">
           My <span className="text-lime-400">Plan</span>
@@ -38,7 +37,6 @@ export default function MyPlanPage() {
         </p>
       </div>
 
-      {/* Stats */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
         {stats.map(([label, value], i) => (
           <div
@@ -56,7 +54,6 @@ export default function MyPlanPage() {
         ))}
       </div>
 
-      {/* Tabs + sort */}
       <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
         <div className="flex bg-[#14161b] border border-white/10 rounded-full p-1 text-sm">
           {[['plan', "Today's Plan"], ['saved', 'Saved']].map(([key, label]) => (
@@ -88,7 +85,6 @@ export default function MyPlanPage() {
         </label>
       </div>
 
-      {/* List */}
       {list.length === 0 ? (
         <EmptyState />
       ) : (

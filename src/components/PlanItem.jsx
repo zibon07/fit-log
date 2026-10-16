@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import { Clock, Flame, Star, Check, X } from 'lucide-react';
+import Image from 'next/image';
 
 const PlanItem = ({ item, showDone, done, onDone, onRemove }) => (
   <div className="flex items-center gap-4 bg-[#14161b] border border-white/10 rounded-xl p-3">
-    <img src={item.image} alt={item.name} className="w-28 h-16 object-cover rounded-lg" />
+    <Image src={item.image} alt={item.name} width={112} height={64} className="w-28 h-16 object-cover rounded-lg" />
 
     <div className="flex-1">
       <h3 className="text-sm font-bold uppercase">{item.name}</h3>
