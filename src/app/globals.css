@@ -1,7 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-
+body {
+  background-color: #0b0c0f;
+  color: #fff;
+}
 
 :root {
   --background: #ffffff;
@@ -23,7 +26,7 @@
 }
 
 body {
-  background: var(--background);
+ 
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }

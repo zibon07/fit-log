@@ -16,7 +16,7 @@ const PlanItem = ({ item, showDone, done, onDone, onRemove }) => (
     </div>
 
     <Link
-      href={`/exercises/${item.id}`}
+      href={`/exercise-details/${item.id}`}
       className="border border-white/20 text-xs px-4 py-2 rounded-full"
     >
       View Details
