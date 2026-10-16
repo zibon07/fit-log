@@ -1,3 +1,5 @@
+import AddToPlanButton from "@/components/AddToPlanButton";
+import SaveForLaterButton from "@/components/SaveForLaterButton";
 import { notFound } from "next/navigation";
 
 
@@ -6,7 +8,7 @@ const getExercise = async (exerciseId) => {
     const res = await fetch(`https://api.abcz.workers.dev/api/fitlog/${exerciseId}`);
     if (!res.ok) return null;
     const data = await res.json();
-    return data.result ?? data.data ?? data; // adjust to the real response shape
+    return data.result ?? data.data ?? data; 
 };
 
 const ExerciseDetailsPage = async ({ params }) => {
@@ -70,8 +72,8 @@ const ExerciseDetailsPage = async ({ params }) => {
 
                 <div className="flex gap-3">
                     {/* <AddToPlanButton item={item} /> */}
-                    <button>add to plan</button>
-                    <button>save for later</button>
+                    <AddToPlanButton item={item} />
+                    <SaveForLaterButton item={item} />
                     {/* <SaveForLaterButton item={item} /> */}
 
                 </div>
