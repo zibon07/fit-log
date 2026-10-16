@@ -3,6 +3,7 @@
 import { PlanContext } from '@/context/PlanContext';
 import { useContext } from 'react';
 import { Plus, Check } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 const AddToPlanButton = ({ item }) => {
   const { addToPlan, isInPlan } = useContext(PlanContext);
@@ -10,7 +11,10 @@ const AddToPlanButton = ({ item }) => {
 
   return (
     <button
-      onClick={() => addToPlan(item)}
+      onClick={() => {
+        addToPlan(item)
+        toast.success(`${item.name} added to today's plan`)
+      }}
       disabled={added}
       className="flex items-center gap-3 bg-lime-400 text-black text-base font-medium px-6 py-3 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed"
     >

@@ -3,6 +3,7 @@
 import { PlanContext } from '@/context/PlanContext';
 import { useContext } from 'react';
 import { Bookmark, BookmarkCheck } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 const SaveForLaterButton = ({ item }) => {
   const { savedForLater, setSavedForLater } = useContext(PlanContext);
@@ -12,6 +13,7 @@ const SaveForLaterButton = ({ item }) => {
     setSavedForLater((prev) =>
       prev.some((e) => e.id === item.id) ? prev : [...prev, item]
     );
+    toast.success(`${item.name} saved for later`)
   };
 
   return (
