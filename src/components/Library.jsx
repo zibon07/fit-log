@@ -1,5 +1,6 @@
 import React from 'react';
 import ExerciseCard from './ExerciseCard';
+import Link from 'next/link';
 
 const getExercises = async () => {
     const res = await fetch('https://api.abcz.workers.dev/api/fitlog');
